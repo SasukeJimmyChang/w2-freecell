@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const TimerText = styled.p`
+const TimerText = styled.div`
   font-size: 110px;
 `;
 
