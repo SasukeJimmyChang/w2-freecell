@@ -5,10 +5,14 @@
   "homepage": "https://SasukeJimmyChang.github.io/w2-freecell",
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "lodash": "^4.17.15",
     "rc-progress": "^2.5.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-icons": "^3.7.0",
     "react-scripts": "3.0.1",
+    "react-sortablejs": "^1.5.1",
+    "sortablejs": "1.6.1",
     "styled-components": "^4.3.2"
   },
   "scripts": {

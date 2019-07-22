@@ -1,11 +1,16 @@
 import React from "react";
 import { Button } from '../../components/Buttons';
-import TimerText from '../../components/Text';
 import { Line, Circle } from 'rc-progress';
+import { FaBeer } from 'react-icons/fa';
+import uniqueId from 'lodash/uniqueId';
+// import SortableList from './SortableList';
+import SharedGroup from './SharedGroup';
+
+import Sortable from 'react-sortablejs';
 
 
 const CIRCLE_COLOR = '#3FC7FA';
-export default class CountDownTimer extends React.Component {
+export default class FreeCell extends React.Component {
 
   constructor(props) {
     super(props);
@@ -18,6 +23,7 @@ export default class CountDownTimer extends React.Component {
       isStop: false,
       playButtonText: 'Start',
       progress: 0,
+      items: ['Apple', 'Banana', 'Cherry', 'Guava', 'Peach', 'Strawberry']
     };
   }
 
@@ -117,7 +123,8 @@ export default class CountDownTimer extends React.Component {
       currentMin,
       currentSec,
       playButtonText,
-      percent
+      percent,
+      // items
     } = this.state;
 
     const circleContainerStyle = {
@@ -125,6 +132,7 @@ export default class CountDownTimer extends React.Component {
       height: '250px',
       display: 'inline-block',
     };
+    const items = this.state.items.map(val => (<li key={uniqueId()} data-id={val}>{val}</li>));
 
     return (
       <div className="App">
@@ -132,20 +140,40 @@ export default class CountDownTimer extends React.Component {
           <div style={circleContainerStyle}>
             <Circle percent={percent} strokeWidth="6" strokeLinecap="round" strokeColor={CIRCLE_COLOR} />
           </div>
-          <TimerText>
-            {currentMin}:{currentSec}
-          </TimerText>
           <Button onClick={() => this.handlePlayButton()}>
             {playButtonText}
           </Button>
           <Button onClick={() => this.resetTimer()}>
             Stop
           </Button>
+          <h3> Lets go for a <FaBeer /></h3>
+          <div>
+            <Sortable
+              tag="ul" // Defaults to "div"
+              onChange={(order, sortable, evt) => {
+                this.setState({ items: order });
+              }}
+            >
+              {items}
+            </Sortable>
+          </div>
+          {/* <SortableList
+            items={this.state.items}
+            onChange={(items) => {
+              this.setState({ items });
+            }}
+          >
+          </SortableList> */}
+          <div>
+            <SharedGroup
+              items={['Apple', 'Banaba', 'Cherry', 'Grape']}
+            />
+            <br />
+            <SharedGroup
+              items={['Lemon', 'Orange', 'Pear', 'Peach']}
+            />
+          </div>
         </header>
-        {/* 
-        <body>
-
-        </body> */}
       </div >
     );
   }

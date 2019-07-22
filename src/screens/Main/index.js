@@ -1,7 +1,7 @@
 import React from "react";
 import logo from '../../logo.svg';
 import styled from 'styled-components';
-import CountDownTimer from '../CountDownTimerScreen';
+import FreeCell from '../FreeCell';
 import { CenterContainer } from '../../components/Container';
 
 const MainContainer = styled.div`
@@ -37,11 +37,11 @@ export default class Main extends React.Component {
       <MainContainer>
         {/* <CountDownTimer /> */}
         <CenterContainer>
-          <CountDownTimer />
+          <FreeCell />
         </CenterContainer>
+
       </MainContainer>
       // <LeftSideBar />
-
       // <RightSideBar />
       // <Footer />
     );
