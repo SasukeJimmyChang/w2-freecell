@@ -2,6 +2,7 @@
   "name": "w2-freecell",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://SasukeJimmyChang.github.io/w2-freecell",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "rc-progress": "^2.5.1",
