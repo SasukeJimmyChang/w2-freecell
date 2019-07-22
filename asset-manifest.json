@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.87916bd9.chunk.css",
-    "main.js": "/static/js/main.e0c0c2a8.chunk.js",
-    "main.js.map": "/static/js/main.e0c0c2a8.chunk.js.map",
-    "runtime~main.js": "/static/js/runtime~main.a8a9905a.js",
-    "runtime~main.js.map": "/static/js/runtime~main.a8a9905a.js.map",
-    "static/js/2.38b740f2.chunk.js": "/static/js/2.38b740f2.chunk.js",
-    "static/js/2.38b740f2.chunk.js.map": "/static/js/2.38b740f2.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.7a33cb0f890869e374f1e24084e13720.js": "/precache-manifest.7a33cb0f890869e374f1e24084e13720.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.87916bd9.chunk.css.map": "/static/css/main.87916bd9.chunk.css.map",
-    "static/media/logo.svg": "/static/media/logo.5d5d9eef.svg"
+    "main.css": "/w2-freecell/static/css/main.87916bd9.chunk.css",
+    "main.js": "/w2-freecell/static/js/main.b662d81b.chunk.js",
+    "main.js.map": "/w2-freecell/static/js/main.b662d81b.chunk.js.map",
+    "runtime~main.js": "/w2-freecell/static/js/runtime~main.a2f543e2.js",
+    "runtime~main.js.map": "/w2-freecell/static/js/runtime~main.a2f543e2.js.map",
+    "static/js/2.6eef9218.chunk.js": "/w2-freecell/static/js/2.6eef9218.chunk.js",
+    "static/js/2.6eef9218.chunk.js.map": "/w2-freecell/static/js/2.6eef9218.chunk.js.map",
+    "index.html": "/w2-freecell/index.html",
+    "precache-manifest.a438823ffc001ecabf8206559450a55f.js": "/w2-freecell/precache-manifest.a438823ffc001ecabf8206559450a55f.js",
+    "service-worker.js": "/w2-freecell/service-worker.js",
+    "static/css/main.87916bd9.chunk.css.map": "/w2-freecell/static/css/main.87916bd9.chunk.css.map",
+    "static/media/logo.svg": "/w2-freecell/static/media/logo.5d5d9eef.svg"
   }
 }
